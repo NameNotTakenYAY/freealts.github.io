@@ -1,0 +1,63 @@
+var NumberOfWords = 40
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "http://zipansion.com/3pwAo"
+words[2] = "http://zipansion.com/3pvyL"
+words[3] = "http://zipansion.com/3pw7J"
+words[4] = "http://zipansion.com/3pw8k"
+words[5] = "http://zipansion.com/3pwDv"
+words[6] = "http://zipansion.com/3pwBW"
+words[7] = "http://zipansion.com/3pw0R"
+words[8] = "http://zipansion.com/3pw5i"
+words[9] = "http://zipansion.com/3pw7q"
+words[10] = "http://zipansion.com/3pwAo"
+words[12] = "http://zipansion.com/3pvyL"
+words[13] = "http://zipansion.com/3pw7J"
+words[14] = "http://zipansion.com/3pw8k"
+words[15] = "http://zipansion.com/3pwDv"
+words[16] = "http://zipansion.com/3pwBW"
+words[17] = "http://zipansion.com/3pw0R"
+words[18] = "http://zipansion.com/3pw5i"
+words[19] = "http://zipansion.com/3pw7q"
+words[20] = "http://zipansion.com/3pwAo"
+words[21] = "http://zipansion.com/3pvyL"
+words[22] = "http://zipansion.com/3pw7J"
+words[23] = "http://zipansion.com/3pw8k"
+words[24] = "http://zipansion.com/3pwDv"
+words[25] = "http://zipansion.com/3pwBW"
+words[26] = "http://zipansion.com/3pw0R"
+words[27] = "http://zipansion.com/3pw5i"
+words[28] = "http://zipansion.com/3pw7q"
+words[29] = "http://zipansion.com/3pwAo"
+words[30] = "http://zipansion.com/3pvyL"
+words[31] = "http://zipansion.com/3pw7J"
+words[32] = "http://zipansion.com/3pw8k"
+words[33] = "http://zipansion.com/3pwDv"
+words[34] = "http://zipansion.com/3pwBW"
+words[35] = "http://zipansion.com/3pw0R"
+words[36] = "http://zipansion.com/3pw5i"
+words[37] = "http://zipansion.com/3pw7q"
+words[38] = "http://shortearn.eu/DMahpz"
+words[39] = "http://shortearn.eu/6ZidSl"
+words[40] = "http://shortearn.eu/nvkY"
+
+
+
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 40 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
